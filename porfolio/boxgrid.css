@@ -1,0 +1,126 @@
+.button {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #6e3c8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .box-grid {
+    justify-content: center;
+  }
+
+  .box {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+  }
+}

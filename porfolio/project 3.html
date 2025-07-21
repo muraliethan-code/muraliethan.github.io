@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Periodic Table</title>
+  <style>
+    body {
+      background-color: ForestGreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button {
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      padding: 12px 0;
+      background-color: #6e3c8d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 999;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .layout {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      background-color: Gold;
+      padding: 10px;
+    }
+
+    td {
+      border: 1px solid #333;
+      width: 40px;
+      height: 40px;
+    }
+
+    .empty {
+      border: none;
+      background: transparent;
+    }
+
+    img {
+      max-width: 200px;
+      height: auto;
+      border: 2px solid white;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="button">Home</a>
+
+<div class="layout">
+  <img src="FEUTECH.png" alt="FEU Tech Logo">
+
+  <div class="container">
+    <h1>PERIODIC TABLE OF ELEMENTS</h1>
+    <table>
+      <tr><td>H</td><td class="empty" colspan="16"></td><td>He</td></tr>
+      <tr><td>Li</td><td>Be</td><td class="empty" colspan="10"></td><td>B</td><td>C</td><td>N</td><td>O</td><td>F</td><td>Ne</td></tr>
+      <tr><td>Na</td><td>Mg</td><td class="empty" colspan="10"></td><td>Al</td><td>Si</td><td>P</td><td>S</td><td>Cl</td><td>Ar</td></tr>
+      <tr><td>K</td><td>Ca</td><td>Sc</td><td>Ti</td><td>V</td><td>Cr</td><td>Mn</td><td>Fe</td><td>Co</td><td>Ni</td><td>Cu</td><td>Zn</td><td>Ga</td><td>Ge</td><td>As</td><td>Se</td><td>Br</td><td>Kr</td></tr>
+      <tr><td>Rb</td><td>Sr</td><td>Y</td><td>Zr</td><td>Nb</td><td>Mo</td><td>Tc</td><td>Ru</td><td>Rh</td><td>Pd</td><td>Ag</td><td>Cd</td><td>In</td><td>Sn</td><td>Sb</td><td>Te</td><td>I</td><td>Xe</td></tr>
+      <tr><td>Cs</td><td>Ba</td><td class="empty"></td><td>Hf</td><td>Ta</td><td>W</td><td>Re</td><td>Os</td><td>Ir</td><td>Pt</td><td>Au</td><td>Hg</td><td>Tl</td><td>Pb</td><td>Bi</td><td>Po</td><td>At</td><td>Rn</td></tr>
+      <tr><td>Fr</td><td>Ra</td><td class="empty"></td><td>Rf</td><td>Db</td><td>Sg</td><td>Bh</td><td>Hs</td><td>Mt</td><td>Ds</td><td>Rg</td><td>Cn</td><td>Nh</td><td>Fl</td><td>Mc</td><td>Lv</td><td>Ts</td><td>Og</td></tr>
+      <tr>
+        <td class="empty" colspan="2"></td>
+        <td colspan="15">
+          <table>
+            <tr>
+              <td>La</td><td>Ce</td><td>Pr</td><td>Nd</td><td>Pm</td><td>Sm</td><td>Eu</td><td>Gd</td><td>Tb</td><td>Dy</td><td>Ho</td><td>Er</td><td>Tm</td><td>Yb</td><td>Lu</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="empty" colspan="2"></td>
+        <td colspan="15">
+          <table>
+            <tr>
+              <td>Ac</td><td>Th</td><td>Pa</td><td>U</td><td>Np</td><td>Pu</td><td>Am</td><td>Cm</td><td>Bk</td><td>Cf</td><td>Es</td><td>Fm</td><td>Md</td><td>No</td><td>Lr</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

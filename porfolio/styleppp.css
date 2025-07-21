@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: 
+    url('purple2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: 
+    url('purple2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #2c103d;
+  position: relative;
+}
+
+header img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid #2c103d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+header p {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.project-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #6e3c8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  width: 50%;
+  height: 5px;
+  background-color: #e37ef7;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.projects {
+  padding: 40px 60px;
+  background: 
+    url('purple2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #2c103d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 400px;
+  padding: 12px 15px;
+  border: 2px solid #6e3c8d;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #e37ef7;
+  box-shadow: 0 0 8px rgba(227, 126, 247, 0.7);
+}
+
+.contact-form button {
+  width: 200px;
+  padding: 12px 0;
+  background-color: #6e3c8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #630f7c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#profilePic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid #2c103d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#profilePic.slide-left {
+  transform: translateX(-100px);
+}
+
+.contact-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(50%);
+  opacity: 0;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+  color: #2c103d;
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contact-info.show {
+  opacity: 1;
+  transform: translateX(120px); /* slides right next to profile */
+}
+
+
